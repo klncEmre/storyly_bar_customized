@@ -16,6 +16,8 @@
 		BCD39B562860A6EB002A722E /* storyly_bar_customizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B552860A6EB002A722E /* storyly_bar_customizedTests.swift */; };
 		BCD39B602860A6EB002A722E /* storyly_bar_customizedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B5F2860A6EB002A722E /* storyly_bar_customizedUITests.swift */; };
 		BCD39B622860A6EB002A722E /* storyly_bar_customizedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B612860A6EB002A722E /* storyly_bar_customizedUITestsLaunchTests.swift */; };
+		BCD39B702860A7F4002A722E /* Storyly in Frameworks */ = {isa = PBXBuildFile; productRef = BCD39B6F2860A7F4002A722E /* Storyly */; };
+		BCD39B722860AED6002A722E /* storyly_bar_implementedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B712860AED6002A722E /* storyly_bar_implementedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		BCD39B5B2860A6EB002A722E /* storyly_bar_customizedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyly_bar_customizedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD39B5F2860A6EB002A722E /* storyly_bar_customizedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyly_bar_customizedUITests.swift; sourceTree = "<group>"; };
 		BCD39B612860A6EB002A722E /* storyly_bar_customizedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyly_bar_customizedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCD39B712860AED6002A722E /* storyly_bar_implementedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyly_bar_implementedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD39B702860A7F4002A722E /* Storyly in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				BCD39B472860A6EB002A722E /* Assets.xcassets */,
 				BCD39B492860A6EB002A722E /* LaunchScreen.storyboard */,
 				BCD39B4C2860A6EB002A722E /* Info.plist */,
+				BCD39B712860AED6002A722E /* storyly_bar_implementedViewController.swift */,
 			);
 			path = storyly_bar_customized;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = storyly_bar_customized;
+			packageProductDependencies = (
+				BCD39B6F2860A7F4002A722E /* Storyly */,
+			);
 			productName = storyly_bar_customized;
 			productReference = BCD39B3B2860A6E9002A722E /* storyly_bar_customized.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = BCD39B322860A6E9002A722E;
+			packageReferences = (
+				BCD39B6E2860A7F4002A722E /* XCRemoteSwiftPackageReference "storyly-ios" */,
+			);
 			productRefGroup = BCD39B3C2860A6E9002A722E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			files = (
 				BCD39B432860A6E9002A722E /* ViewController.swift in Sources */,
 				BCD39B3F2860A6E9002A722E /* AppDelegate.swift in Sources */,
+				BCD39B722860AED6002A722E /* storyly_bar_implementedViewController.swift in Sources */,
 				BCD39B412860A6E9002A722E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCD39B6E2860A7F4002A722E /* XCRemoteSwiftPackageReference "storyly-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Netvent/storyly-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCD39B6F2860A7F4002A722E /* Storyly */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD39B6E2860A7F4002A722E /* XCRemoteSwiftPackageReference "storyly-ios" */;
+			productName = Storyly;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCD39B332860A6E9002A722E /* Project object */;
 }
