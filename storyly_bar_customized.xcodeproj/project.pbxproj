@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC981E682861A7FF006B2D2E /* ThreeStorylyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC981E672861A7FF006B2D2E /* ThreeStorylyViewController.swift */; };
 		BCD39B3F2860A6E9002A722E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B3E2860A6E9002A722E /* AppDelegate.swift */; };
 		BCD39B412860A6E9002A722E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B402860A6E9002A722E /* SceneDelegate.swift */; };
 		BCD39B432860A6E9002A722E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD39B422860A6E9002A722E /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC981E672861A7FF006B2D2E /* ThreeStorylyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeStorylyViewController.swift; sourceTree = "<group>"; };
 		BCD39B3B2860A6E9002A722E /* storyly_bar_customized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyly_bar_customized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD39B3E2860A6E9002A722E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD39B402860A6E9002A722E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				BCD39B492860A6EB002A722E /* LaunchScreen.storyboard */,
 				BCD39B4C2860A6EB002A722E /* Info.plist */,
 				BCD39B712860AED6002A722E /* storyly_bar_implementedViewController.swift */,
+				BC981E672861A7FF006B2D2E /* ThreeStorylyViewController.swift */,
 			);
 			path = storyly_bar_customized;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC981E682861A7FF006B2D2E /* ThreeStorylyViewController.swift in Sources */,
 				BCD39B432860A6E9002A722E /* ViewController.swift in Sources */,
 				BCD39B3F2860A6E9002A722E /* AppDelegate.swift in Sources */,
 				BCD39B722860AED6002A722E /* storyly_bar_implementedViewController.swift in Sources */,

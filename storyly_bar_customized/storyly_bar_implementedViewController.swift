@@ -20,18 +20,18 @@ class storyly_bar_implementedViewController: UIViewController {
         view.bounds = view.frame.insetBy(dx: 0, dy: -35.0);
         self.storylyView.storylyInit = StorylyInit(storylyId: STORYLY_INSTANCE_TOKEN)
         self.storylyView.rootViewController = self
-        self.view.addSubview(storylyView)
         self.storylyView.delegate = self
+        self.view.addSubview(storylyView)
         self.storylyView.backgroundColor = UIColor.white
         self.storylyView.translatesAutoresizingMaskIntoConstraints = false
         self.storylyView.widthAnchor.constraint(equalToConstant: screenSize.width).isActive = true
          //Set up delegat
         self.storylyView.storyGroupTextColor = UIColor.systemBlue
         self.storylyView.storyGroupIconBackgroundColor = UIColor.yellow
-        storylyView.storyGroupIconBorderColorNotSeen = [UIColor.brown,UIColor.gray]
+        self.storylyView.storyGroupIconBorderColorNotSeen = [UIColor.brown,UIColor.gray]
 //        WHY FIRST STORY'S COLORS DID NOT CHANGED
-        storylyView.storyGroupSize = "custom"
-        storylyView.storyGroupIconStyling = StoryGroupIconStyling(height: CGFloat(100), width: CGFloat(screenSize.width / 4), cornerRadius: CGFloat(40))
+        self.storylyView.storyGroupSize = "custom"
+        self.storylyView.storyGroupIconStyling = StoryGroupIconStyling(height: CGFloat(100), width: CGFloat(screenSize.width / 4), cornerRadius: CGFloat(40))
 
         
         

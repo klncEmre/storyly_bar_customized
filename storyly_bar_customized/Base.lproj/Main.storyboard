@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j3O-7L-VuZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3fb-9Q-3GM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -54,6 +54,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYQ-xV-jz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="904" y="82"/>
+        </scene>
+        <!--Three Storyly View Controller-->
+        <scene sceneID="DjI-bn-9xm">
+            <objects>
+                <viewController id="3fb-9Q-3GM" customClass="ThreeStorylyViewController" customModule="storyly_bar_customized" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oT1-cu-TLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvg-JW-Tee" customClass="StorylyView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="jaL-Ra-ocb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9e8-QB-Rg9" customClass="StorylyView">
+                                <rect key="frame" x="0.0" y="223" width="414" height="125"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="pq2-Ij-u3h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0pO-BM-mq4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0pO-BM-mq4" firstAttribute="trailing" secondItem="9e8-QB-Rg9" secondAttribute="trailing" id="7Wv-4a-fqR"/>
+                            <constraint firstItem="lvg-JW-Tee" firstAttribute="leading" secondItem="0pO-BM-mq4" secondAttribute="leading" id="8wU-aJ-Aew"/>
+                            <constraint firstItem="9e8-QB-Rg9" firstAttribute="leading" secondItem="0pO-BM-mq4" secondAttribute="leading" id="LWA-PU-Ggd"/>
+                            <constraint firstItem="9e8-QB-Rg9" firstAttribute="top" secondItem="lvg-JW-Tee" secondAttribute="bottom" constant="39" id="dNp-w3-PZe"/>
+                            <constraint firstItem="0pO-BM-mq4" firstAttribute="trailing" secondItem="lvg-JW-Tee" secondAttribute="trailing" id="dZF-JG-WaP"/>
+                            <constraint firstItem="lvg-JW-Tee" firstAttribute="top" secondItem="0pO-BM-mq4" secondAttribute="top" constant="20" id="y7F-TZ-qgB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="window1" destination="lvg-JW-Tee" id="x7F-ry-X0A"/>
+                        <outlet property="window2" destination="9e8-QB-Rg9" id="v7C-yf-GyZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4N-le-ceH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733" y="82"/>
         </scene>
     </scenes>
     <resources>
